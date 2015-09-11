@@ -1,0 +1,15 @@
+source 'https://github.com/CocoaPods/Specs.git'
+use_frameworks!
+
+target 'ManagedStats_Example', :exclusive => true do
+  pod "ManagedStats", :path => "../"
+end
+
+target 'ManagedStats_Tests', :exclusive => true do
+  pod "ManagedStats", :path => "../"
+
+  pod 'Quick', '~> 0.3.1'
+  pod 'Nimble'
+  pod 'FBSnapshotTestCase'
+  pod 'Nimble-Snapshots'
+end
