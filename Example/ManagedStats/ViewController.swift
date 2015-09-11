@@ -7,12 +7,16 @@
 //
 
 import UIKit
+import ManagedStats
 
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        let ms = MAStats()
+        ms.record()
     }
 
     override func didReceiveMemoryWarning() {
